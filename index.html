@@ -34,61 +34,82 @@ body {
 
 
 .logo {
-  text-align: center;
+    text-align: center;
 }
 
 h1 {
-  text-align: center;
+    text-align: center;
+}
+
+p{
+    text-align: center;
 }
 
 form {
-  margin: 0 auto;
+    margin: 0 auto;
 }
-.button-link {
+.button-linkin {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #0074D9; /* Cor de fundo do botão */
-            color: #fff; /* Cor do texto */
+            background-color: #0056b3; /* Cor de fundo do botão */
+            color: #fafafa; /* Cor do texto */
+            text-decoration: none;
+            border-radius: 5px; /* Borda arredondada */
+        }
+
+        /* Estilos de hover para o link */
+        .button-linkin:hover {
+            background-color: #007bff; /* Cor de fundo do botão ao passar o mouse */
+        }
+        
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00b351; /* Cor de fundo do botão */
+            color: #ffffff; /* Cor do texto */
             text-decoration: none;
             border-radius: 5px; /* Borda arredondada */
         }
 
         /* Estilos de hover para o link */
         .button-link:hover {
-            background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+            background-color: #ccc; /* Cor de fundo do botão ao passar o mouse */
         }
+
 </style>
 <body>
     <div class="container">
         <header>
             <img src="https://raw.githubusercontent.com/Luann8/LPP-1.2-usuarios/main/prefeitura-de-paracambi-logao%20(2).png" alt="Logotipo do Governo" class="logo">
                <h1> Governo de Paracambi</h1>
-            <h1>Receber e Enviar Informações de Licenças ambientais</h1>
-        <h2> Cadastro : </h2>
-        </header>
-        
+            <p>Receber e Enviar Informações de Licenças ambientais</p>        
+    <p></p>
+</header>
+    <p><strong> Cadastro:</strong></p>  
+        <hr>
         <section class="content">
     
             <form method="POST" action="processar_informacoes.php">
                 <div class="form-group">
-                    <label for="nome">Nome:</label>
+                    <label for="nome"><strong> Nome:</strong></label>
                     <input type="text" id="nome" name="nome" required>
                 </div>
                 <hr>
 
                 <div class="form-group">
-                    <label for="email">E-mail:</label>
+                    <label for="email"><strong>E-mail:</strong> </label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <hr>
 
                 <div class="form-group">
-                    <label for="senha">Senha:</label>
+                    <label for="senha"><strong>Senha</strong></label>
                     <input type="password" id="senha" name="senha" required>
                 </div>
 <hr>
+                <p></p>
 <a class="button-link" href="https://luann8.github.io/LPP-1.2-usuarios/">Entrar</a>
-
+<a class="button-linkin" href="https://luann8.github.io/LPP-1.2-Criar-Login/">registrar</a>
             </form>
             
 
@@ -100,6 +121,5 @@ form {
             window.location.href = "https://luann8.github.io/LPP-1.2-usuarios/";
         });
 </script>
-      </body>
+</body>
 </html>
-
