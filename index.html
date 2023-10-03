@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/Luann8/LPP-1.2-usuarios/main/icon.ico?token=GHSAT0AAAAAACG3LP2OWTGU3MSMQSRORH36ZIQXDRQ" type="image/x-icon">
-    <title>Licenças ambientais Parabambi</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file for better organization -->
-</head>
-<style>
-  
-  body {
+    <link rel="stylesheet" href="styles.css">
+    <title>Licenças Ambientais Paracambi</title>
+    <style>
+        /* Your CSS styles go here */
+        /* Add styling to improve the appearance */
+        body {
             font-family: Arial, sans-serif;
             background-image: url('https://mediaim.expedia.com/destination/1/ee1fe16f4ed611b34d641c34ff22a9db.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh');
             background-size: cover;
@@ -31,96 +31,81 @@
             max-width: 400px;
             margin: 0 auto;
         }
-
-
-
-.logo {
-    text-align: center;
-}
-
-h1 {
-    text-align: center;
-}
-
-p{
-    text-align: center;
-}
-
-form {
-    margin: 0 auto;
-}
-.button-linkin {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #0056b3; /* Cor de fundo do botão */
-            color: #fafafa; /* Cor do texto */
-            text-decoration: none;
-            border-radius: 5px; /* Borda arredondada */
+        .logo {
+            max-width: 100%;
+            height: auto;
         }
-
-        /* Estilos de hover para o link */
-        .button-linkin:hover {
-            background-color: #007bff; /* Cor de fundo do botão ao passar o mouse */
+        h1 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        p {
+            font-size: 16px;
+        }
+        form {
+            margin-top: 0 auto;
+        }
+        .form-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
         }
         
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
         .button-link {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #00b351; /* Cor de fundo do botão */
-            color: #ffffff; /* Cor do texto */
+            background-color: #0056b3;
+            color: #fafafa;
             text-decoration: none;
-            border-radius: 5px; /* Borda arredondada */
+            border-radius: 5px;
+            margin-right: 10px;
         }
-
-        /* Estilos de hover para o link */
         .button-link:hover {
-            background-color: #ccc; /* Cor de fundo do botão ao passar o mouse */
+            background-color: #007bff;
         }
-
-</style>
+    </style>
+</head>
 <body>
     <div class="container">
         <header>
             <img src="https://raw.githubusercontent.com/Luann8/LPP-1.2-usuarios/main/prefeitura-de-paracambi-logao%20(2).png" alt="Logotipo do Governo" class="logo">
-               <h1> Governo de Paracambi</h1>
-            <p>Receber e Enviar Informações de Licenças ambientais</p>        
-    <p></p>
-</header>
-    <p><strong> Cadastro:</strong></p>  
+            <h1>Governo de Paracambi</h1>
+            <p>Receber e Enviar Informações de Licenças Ambientais</p>
+        </header>
+        <p><strong>Cadastro:</strong></p>
         <hr>
         <section class="content">
-    
             <form method="POST" action="processar_informacoes.php">
                 <div class="form-group">
-                    <label for="nome"><strong> Nome:</strong></label>
+                    <label for="nome"><strong>Nome:</strong></label>
                     <input type="text" id="nome" name="nome" required>
                 </div>
-                <hr>
-
                 <div class="form-group">
-                    <label for="email"><strong>E-mail:</strong> </label>
+                    <label for="email"><strong>E-mail:</strong></label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                <hr>
-
                 <div class="form-group">
-                    <label for="senha"><strong>Senha</strong></label>
+                    <label for="senha"><strong>Senha:</strong></label>
                     <input type="password" id="senha" name="senha" required>
                 </div>
-<hr>
-                <p></p>
-<a class="button-link" href="https://luann8.github.io/LPP-1.2-usuarios/">Entrar</a>
-<a class="button-linkin" href="https://luann8.github.io/LPP-1.2-Criar-Login/">registrar</a>
+                <div class="form-group">
+                    <a class="button-link" href="https://luann8.github.io/LPP-1.2-usuarios/">Entrar</a>
+                    <a class="button-link" href="https://luann8.github.io/LPP-1.2-Criar-Login/">registrar</a>
+                </div>
             </form>
-            
-
         </section>
     </div>
-    <script src="script.js"></script>
-    <script>
-        document.querySelector("#entrar").addEventListener("click", () => {
-            window.location.href = "https://luann8.github.io/LPP-1.2-usuarios/";
-        });
-</script>
 </body>
 </html>
